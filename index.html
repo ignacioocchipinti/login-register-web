@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="header">
+        
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="user signin-box">
+                <div class="img-box"><img src="assets/img.jpg" alt=""></div>
+                <div class="form-box">
+                    <form action="">
+                        <h2>Welcome back!</h2>
+                        <input type="text" name="username" placeholder="Insert your username">
+                        <input type="password" name="password" placeholder="Insert your password">
+                        <input type="submit" value="Login">
+                        <p class="signup">don't have an account? <a href="#" onclick="toggleForm();">Register</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user register-box">
+                <div class="form-box">
+                    <form action="">
+                        <h2>Create an account!</h2>
+                        <input type="text" name="username" placeholder="Create a username">
+                        <input type="email" name="email" placeholder="Insert your email">
+                        <input type="password" name="password" placeholder="Create a password">
+                        <input type="password" name="passwordConfirm" placeholder="Repeat password">
+                        <input type="submit" value="Register">
+                        <p class="signup">already have an account? <a href="#" onclick="toggleForm();">Login</a></p>
+                    </form>
+                </div>
+                <div class="img-box"><img src="assets/img2.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleForm = () => {
+            container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
